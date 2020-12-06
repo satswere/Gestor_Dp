@@ -51,8 +51,8 @@
   <label class="custom-file-label" for="picture">Choose file</label>
 </div>
   <div class="form-row">
-  <label for="validationTextarea" id="description">Textarea</label>
-    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+  <label for="validationTextarea" >Textarea</label>
+    <textarea class="form-control is-invalid" id="description" placeholder="Required example textarea" required></textarea>
   <!--  <div class="invalid-feedback">
       Please enter a message in the textarea.
     </div>-->
