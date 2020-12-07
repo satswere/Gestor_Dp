@@ -20,25 +20,16 @@
 	            </ul>
 	          </li>
 	          <li>
-              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Menu</a>
-              <ul class="collapse list-unstyled" id="pageSubmenu">
-                <li>
-                    <a href="food.php">Agregar Producto</a>
-                </li>
-                <li>
-                    <a href="#">Ver Menu</a>
-                </li>
-              </ul>
+			  <a href="../../es/admin/food.php"> Menu</a>
+			  <li>
+				  <a href="../../es/admin/pedidos.php"> pedidos</a>
+			  </li>
+			  <!-- navegacion de otros modulos, mientras se desarrolla 
+			  <li>
+				  <a href="../../es/repartidor/index.php"> ir al repartidor</a>
 			  </li>
 			  <li>
-				  <a href="../admin/dashboard.html"> pedidos</a>
-			  </li>
-			  <!-- navegacion de otros modulos, mientras se desarrolla -->
-			  <li>
-				  <a href="../repartidor/index.html"> ir al repartidor</a>
-			  </li>
-			  <li>
-				  <a href="../../index.html"> ir al index</a>
+				  <a href="../../index.php"> ir al index</a>
 			  </li>
 			  <li>
 				  <a href="../index.html"> login</a>
@@ -46,7 +37,7 @@
 			  <li>
 				  <a href="../index.html"> Registro</a>
 			  </li>
-			  <!-- fin de la navegacion entre otros modulos -->
+			 fin de la navegacion entre otros modulos -->
 	        </ul>
 
 	      </div>

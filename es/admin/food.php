@@ -24,23 +24,23 @@
 
 				<div class="card bg-light mb-3" >
   <div class="card-header">
-    Featured
+    Agregar nuevo producto
   </div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
+    <h5 class="card-title">datos del nuevo preducto</h5>
     <p class="card-text">
 	<form class="was-validated" id="formulario_comida">
   <div class="form-row">
     <div class="col-md-6 mb-3">
-      <label for="validationServer01">First name</label>
-      <input type="text" class="form-control is-valid" id="name" placeholder="name" required>
+      <label for="validationServer01">Nombre:</label>
+      <input type="text" class="form-control is-valid" id="name" placeholder="pizza con piña" required>
      <!--  <div class="valid-feedback">
         Looks good!
       </div> -->
     </div>
     <div class="col-md-6 mb-3">
-      <label for="validationServer02">Last name</label>
-      <input type="text" class="form-control is-valid" id="price" placeholder="price" required>
+      <label for="validationServer02">Precio:</label>
+      <input type="text" class="form-control is-valid" id="price" placeholder="100" required>
       <!--  <div class="valid-feedback">
         Looks good!
       </div> -->
@@ -48,11 +48,11 @@
   </div>
   <div class="custom-file">
   <input type="file" class="custom-file-input" id="picture">
-  <label class="custom-file-label" for="picture">Choose file</label>
+  <label class="custom-file-label" for="picture">Seleccione una imagen</label>
 </div>
   <div class="form-row">
-  <label for="validationTextarea" >Textarea</label>
-    <textarea class="form-control is-invalid" id="description" placeholder="Required example textarea" required></textarea>
+  <label for="validationTextarea" >Descripcion:</label>
+    <textarea class="form-control is-invalid" id="description" placeholder="es una pizza con piña, orillas de queso y muy rica" required></textarea>
   <!--  <div class="invalid-feedback">
       Please enter a message in the textarea.
     </div>-->
@@ -64,12 +64,36 @@
 </div>
 <div class="card">
   <div class="card-header">
-    Featured
+    productos en existencia
   </div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">nombre</th>
+      <th scope="col">precio</th>
+      <th scope="col">descripcion</th>
+      <th scope="col">acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+  <?php
+  include("../../public/inc/conexion.php");
+      $select_query = "SELECT * FROM `product`";
+    $result = mysqli_query($conn, $select_query);
+    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+        echo'
+        <tr>
+        <th scope="row">'.$row["name_product"].'</th>
+        <td>'.$row["price"].'</td>
+        <td>'.$row["descriptions"].'</td>
+        <td>   <a href="" class="button">borrar</a>    <a href="" class="button">modificar</a> </>
+      </tr>
+        '; 
+    }
+  ?>
+  </tbody>
+</table>
   </div>
 </div>
 				</div>	

@@ -43,17 +43,18 @@
             <script>
             
            var map = L.map('map').
-           setView([41.66, -4.72], 
-           14);
-            
+           setView([20.501088020653008, -86.95219635547727], 
+           17);
            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-               maxZoom: 18
+               maxZoom: 50
            }).addTo(map);
            
            L.control.scale().addTo(map);
-           L.marker([41.66, -4.71], {draggable: true}).addTo(map);
-           
+           L.marker([20.50199245775702, -86.95122003141954], {draggable: false}).addTo(map);
+           L.marker([20.502263787847237, -86.95653080514023], {draggable: false}).addTo(map);
+           L.marker([20.49899774556115, -86.95516824299112], {draggable: false}).addTo(map);
+           L.marker([20.499924561498727, -86.95076890802608], {draggable: false}).addTo(map);
             </script>	
            <!-- final del mapa-->	
            <div class="container">
