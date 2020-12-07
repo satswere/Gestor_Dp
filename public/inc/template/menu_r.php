@@ -1,7 +1,7 @@
 <!-- menu del repartidor-->
-<nav id="sidebar">
+<nav id="sidebar" style="background-color: #f2222f;">
 				<div class="custom-menu">
-					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+					<button type="button" id="sidebarCollapse" class="btn" style="background-color: #ff873d;">
 	          <i class="fa fa-bars"></i>
 	          <span class="sr-only">Toggle Menu</span>
 	        </button>
