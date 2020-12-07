@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root","roottoor","bd_gestor_dp");
+$conn = mysqli_connect("localhost", "root","adminadmin","bd_gestor_dp");
 /*
 if (mysqli_connect_errno())
 {

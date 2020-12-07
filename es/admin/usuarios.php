@@ -24,69 +24,69 @@
 
 				<div class="card bg-light mb-3" >
   <div class="card-header bg-danger text-light">
-    Agregar nuevo producto
+    Agregar nuevo usuario
   </div>
   <div class="card-body">
-    <h5 class="card-title">datos del nuevo preducto</h5>
+    <h5 class="card-title">datos del nuevo usuario</h5>
     <p class="card-text">
 	<form class="was-validated" id="formulario_comida">
   <div class="form-row">
+  <label for="validationServer01">Usuario:</label>
+      <input type="text" class="form-control is-valid" id="name" placeholder="luis" required>
     <div class="col-md-6 mb-3">
-      <label for="validationServer01">Nombre:</label>
-      <input type="text" class="form-control is-valid" id="name" placeholder="pizza con piña" required>
+      <label for="validationServer01">contraseña:</label>
+      <input type="text" class="form-control is-valid" id="name" placeholder="contraseña" required>
      <!--  <div class="valid-feedback">
         Looks good!
       </div> -->
     </div>
     <div class="col-md-6 mb-3">
-      <label for="validationServer02">Precio:</label>
-      <input type="text" class="form-control is-valid" id="price" placeholder="100" required>
+      <label for="validationServer02">contraseña:</label>
+      <input type="text" class="form-control is-valid" id="price" placeholder="repetir contraseña" required>
       <!--  <div class="valid-feedback">
         Looks good!
       </div> -->
     </div>
   </div>
-  <div class="custom-file">
-  <input type="file" class="custom-file-input" id="picture">
-  <label class="custom-file-label" for="picture">Seleccione una imagen</label>
-</div>
   <div class="form-row">
-  <label for="validationTextarea" >Descripcion:</label>
-    <textarea class="form-control is-invalid" id="description" placeholder="es una pizza con piña, orillas de queso y muy rica" required></textarea>
+  <label for="validationTextarea" >tipo:</label>
+    <textarea class="form-control is-invalid" id="description" placeholder="admin o repartidor" required></textarea>
   <!--  <div class="invalid-feedback">
       Please enter a message in the textarea.
     </div>-->
   </div>
-  <input class="btn float-right mt-4" style="background-color: #ff873d;" type="submit" id="enviar" placeholder="Confirmar">Confirmar</input>
+  <input class="btn float-right mt-4" style="background-color: #ff873d;" type="submit" id="enviar" placeholder="Confirmar"></input>
 </form>
 	</p>
   </div>
 </div>
 <div class="card">
   <div class="card-header bg-danger text-light">
-    productos en existencia
+    usuarios en existencia
   </div>
   <div class="card-body">
   <table class="table">
   <thead>
     <tr>
-      <th scope="col">nombre</th>
-      <th scope="col">precio</th>
-      <th scope="col">descripcion</th>
+      <th scope="col">#</th>
+      <th scope="col">usuario</th>
+      <th scope="col">password</th>
+      <th scope="col"> tipo</th>
       <th scope="col">acciones</th>
     </tr>
   </thead>
   <tbody>
   <?php
   include("../../public/inc/conexion.php");
-      $select_query = "SELECT * FROM `product`";
+      $select_query = "SELECT * FROM `usuarios`";
     $result = mysqli_query($conn, $select_query);
     while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
         echo'
         <tr>
-        <th scope="row">'.$row["name_product"].'</th>
-        <td>'.$row["price"].'</td>
-        <td>'.$row["descriptions"].'</td>
+        <th scope="row">'.$row["id_usuarios"].'</th>
+        <td>'.$row["usuario"].'</td>
+        <td>'.$row["password"].'</td>
+        <td>'.$row["tipo"].'</td>
         <td>   <a href="" class="btn btn-sm btn-danger">borrar <span class="fa fa-trash"> </span></a>    <a href="" class="btn btn-sm btn-warning">modificar <span class="fa fa-edit"> </span></a>
       </tr>
         '; 

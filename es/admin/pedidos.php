@@ -45,7 +45,7 @@
         <td>'.$row["address"].'</td>
         <td>'.$row["total"].' $</td>
         <td>'.$row["date"].'</td>
-        <td>   <a href="" class="button">borrar</a>    <a href="" class="button">modificar</a> </>
+        <td>  <a href="" class="btn btn-sm btn-success">enviar </span></a>    <a href="" class="btn btn-sm btn-warning">produccion <span class="fa fa-edit"> </span> </>
       </tr>
         '; 
     }

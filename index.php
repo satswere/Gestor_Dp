@@ -16,7 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="./public/dist/css/carousel.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="bg-danger">
     <h1 class="text-center text-dark">Gestor Dp</h1>
     
     <main role="main">
@@ -28,7 +28,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <img class="first-slide" src="public/dist/images/pizza.jpg" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1>Example headline.</h1>
@@ -38,7 +38,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+            <img class="second-slide" src="public/dist/images/pasta.jpg" alt="Second slide">
             <div class="container">
               <div class="carousel-caption">
                 <h1>Another example headline.</h1>
@@ -48,7 +48,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <img class="third-slide" src="public/dist/images/pizza2.jpg" alt="Third slide">
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1>One more for good measure.</h1>
@@ -79,25 +79,8 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="./admin/dashboard.html">ir al admin <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
-        <a class="nav-link" href="./repartidor/index.html">ir al repartidor</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link" href="">Mas vendidos</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-md-0">
@@ -198,9 +181,9 @@
         echo'
           <div class="col-12 col-md-4">
     <div class="card text-center">
-      <div class="card-header">'.$row["name_product"].'</div>
-      <img src="public/dist/images/hey.png" class="card-img-top" alt="...">
-      <div class="card-body">
+      <div class="card-header bg-warning text-body">'.$row["name_product"].'</div>
+      <img src="public/dist/images/pizza.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-light">
         <h5 class="card-title">precio: '.$row["price"].' $ mxn</h5>
         <p class="card-text">'.$row["descriptions"].'</p>
         <input type="hidden" id="name" value="'.$row["name_product"].'">
@@ -217,10 +200,6 @@
 </div>
       </div><!-- /.container -->
       <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
     </main>
     <!-- Bootstrap core JavaScript
     ================================================== -->
