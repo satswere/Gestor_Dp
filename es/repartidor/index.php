@@ -67,7 +67,7 @@
                             <h3>Dirección actual</h3>
                         </div>
                         <div class="row ml-2">
-                            <p class="muted-text"> av nosé</p>
+                            <p class="muted-text"> calle 33 b entre 85 y 12 colonia mar</p>
                         </div>
                         <div class="row ml-2">
                             <p><b>Tiempo de entrega: </b> <i>30 min</i></p>
